@@ -57,6 +57,23 @@ export default () => {
                     <ArrowRight onClick={(e:any) => e.stopPropagation() || slider.next()} />
                 </div>
             </div>
+            <div className="text-center"></div>
+            <div className="container">
+                <ul>
+                    <a href=""><li><div className="title">1</div></li></a>
+                    <a href=""><li><div className="title">2</div></li></a>
+                    <a href=""><li><div className="title">3</div></li></a>
+                    <a href=""><li><div className="title">4</div></li></a>
+                    <a href=""><li><div className="title">5</div></li></a>
+                    <a href=""><li><div className="title">6</div></li></a>
+                    <a href=""><li><div className="title">7</div></li></a>
+                    <a href=""><li><div className="title">8</div></li></a>
+                    <a href=""><li><div className="title">9</div></li></a>
+                    <a href=""><li><div className="title">10</div></li></a>
+                    <a href=""><li><div className="title">11</div></li></a>
+                    <a href=""><li><div className="title">12</div></li></a>
+                </ul>
+            </div>
         </>
     )
 }
