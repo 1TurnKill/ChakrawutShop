@@ -1,10 +1,12 @@
-import React, { useState, ReactComponentElement } from 'react'
+import React, { ReactChild, useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 export default () => {
+    const ref_grid = useRef(document.createElement("div"))
+    const [grid, setGrid] = useState(0)
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
         initial: 0,
@@ -12,6 +14,15 @@ export default () => {
             setCurrentSlide(s.details().relativeSlide)
         }, loop: true
     })
+    useEffect(() => {
+        function resize() {
+            const w = ref_grid.current.getBoundingClientRect().width
+            const z = Math.round(((10 / 2304) * (w - ((w > 768) ? 276 : 0))))
+            setGrid((z < 2) ? 2 : z)
+        }
+        resize()
+        window.onresize = resize
+    }, [])
     return (
         <>
             <nav className="text-white">
@@ -53,25 +64,28 @@ export default () => {
                             <img src="/shop_hero4.png" alt="" />
                         </div>
                     </div>
-                    <ArrowLeft onClick={(e:any) => e.stopPropagation() || slider.prev()} />
-                    <ArrowRight onClick={(e:any) => e.stopPropagation() || slider.next()} />
+                    <ArrowLeft onClick={(e: any) => e.stopPropagation() || slider.prev()} />
+                    <ArrowRight onClick={(e: any) => e.stopPropagation() || slider.next()} />
                 </div>
             </div>
             <div className="text-center"></div>
-            <div className="container">
-                <ul>
-                    <a href=""><li><div className="title">1</div></li></a>
-                    <a href=""><li><div className="title">2</div></li></a>
-                    <a href=""><li><div className="title">3</div></li></a>
-                    <a href=""><li><div className="title">4</div></li></a>
-                    <a href=""><li><div className="title">5</div></li></a>
-                    <a href=""><li><div className="title">6</div></li></a>
-                    <a href=""><li><div className="title">7</div></li></a>
-                    <a href=""><li><div className="title">8</div></li></a>
-                    <a href=""><li><div className="title">9</div></li></a>
-                    <a href=""><li><div className="title">10</div></li></a>
-                    <a href=""><li><div className="title">11</div></li></a>
-                    <a href=""><li><div className="title">12</div></li></a>
+            <div ref={ref_grid} className="container max-w-7xl mx-auto">
+                <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="grid gap-6 pb-24">
+                    <div>
+                        <a href=""><li><div className="title">1</div></li></a>
+                    </div>
+                    <div>
+                        <a href=""><li><div className="title">1</div></li></a>
+                    </div>
+                    <div>
+                        <a href=""><li><div className="title">1</div></li></a>
+                    </div>
+                    <div>
+                        <a href=""><li><div className="title">1</div></li></a>
+                    </div>
+                    <div>
+                        <a href=""><li><div className="title">1</div></li></a>
+                    </div>
                 </ul>
             </div>
         </>
