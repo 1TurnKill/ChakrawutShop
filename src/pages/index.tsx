@@ -122,7 +122,7 @@ export default () => {
                                 <li><a href="" className="footer-link">เกี่ยวกับเรา</a></li>
                                 <li><a href="" className="footer-link">สินค้า</a></li>
                                 <li><a href="" className="footer-link">ข่าวสาร</a></li>
-                                <li><a href="" className="footer-link">ติดต่อเรา</a></li>
+                                <li><a href="/contact" className="footer-link">ติดต่อเรา</a></li>
                             </ul>
                         </div>
                         <div className="md:col-span-2">
