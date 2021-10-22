@@ -29,9 +29,8 @@ export default () => {
                             <h5 className="text-2xl"> เมนูหลัก </h5>
                             <ul role="list" className="w-list-unstyled">
                                 <li><a href="" className="footer-link">หน้าหลัก</a></li>
-                                <li><a href="" className="footer-link">เกี่ยวกับเรา</a></li>
-                                <li><a href="" className="footer-link">สินค้า</a></li>
-                                <li><a href="" className="footer-link">ข่าวสาร</a></li>
+                                <li><a href="/product" className="footer-link">สินค้า</a></li>
+                                <li><a href="/news" className="footer-link">ข่าวสาร</a></li>
                                 <li><a href="/contact" className="footer-link">ติดต่อเรา</a></li>
                             </ul>
                         </div>
