@@ -6,7 +6,6 @@ import { FaFacebookF } from 'react-icons/fa'
 import "keen-slider/keen-slider.min.css"
 
 export default () => {
-    // SAWADDEE P JOB
     return (
         <>
             <nav className="text-white">
@@ -32,9 +31,25 @@ export default () => {
                     </div>
                 </div>
             </nav>
-            
+
+            <div>
+                <h2>เกี่ยวกับเรา</h2>
+                ร้าน ส.จักราวุธ ยินดีต้อนรับค่ะ<br/>
+                -จำหน่ายจักรเย็บผ้า อะไหล่จักร อุปกรณ์ตัดเย็บ เเละสินค้าอย่างอื่นอีกมากมาย<br/> 
+                -สินค้าทุกรายการมีสต๊อคพร้อมส่ง จัดส่งทุกวัน<br/> 
+                -ทางร้านเรามีบริการลับกรรไกร-มีด สามารถนำมาที่ร้านได้เลยค่ะ<br/>
+                -หากสินค้าหรือบริการมีปัญหา สามารถทักแชทมาได้เลยค่ะ<br/>
+                <h2>ที่อยู่</h2>
+                : 99-99/1 ซอย 203/1 ถนน รามคำเเหง แขวง มีนบุรี เขต มีนบุรี กรุงเทพ 10510<br/>
+                *** ร้านค้าอยู่ติดถนนใหญ่ ก่อนถึงโลตัสกับบิ๊กซีค่ะ ***   
+            </div>
+
 
             
+
+
+
+
             <footer style={{ background: '#87431D' }} className="text-white py-11 px-10">
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="w-full md:grid md:grid-cols-5 md:gap-x-5">
