@@ -51,11 +51,6 @@ export default () => {
             </nav>
             
 
-
-
-
-
-
             
             <footer style={{ background: '#87431D' }} className="text-white py-11 px-10">
                 <div className="w-full max-w-6xl mx-auto">
