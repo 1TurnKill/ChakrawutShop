@@ -6,24 +6,7 @@ import { FaFacebookF } from 'react-icons/fa'
 import "keen-slider/keen-slider.min.css"
 
 export default () => {
-    const ref_grid = useRef(document.createElement("div"))
-    const [grid, setGrid] = useState(0)
-    const [currentSlide, setCurrentSlide] = React.useState(0)
-    const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-        initial: 0,
-        slideChanged(s) {
-            setCurrentSlide(s.details().relativeSlide)
-        }, loop: true
-    })
-    useEffect(() => {
-        function resize() {
-            const w = ref_grid.current.getBoundingClientRect().width
-            const z = Math.round(((12 / 2304) * (w - ((w > 768) ? 276 : 0))))
-            setGrid((z < 2) ? 2 : z)
-        }
-        resize()
-        window.onresize = resize
-    }, [])
+    // SAWADDEE P JOB
     return (
         <>
             <nav className="text-white">
