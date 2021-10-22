@@ -32,32 +32,14 @@ export default () => {
                     </div>
                 </div>
             </nav>
-            <div className="text-center"></div>
-            <div ref={ref_grid} className="container max-w-7xl mx-auto">
-                <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="grid gap-6 pb-24">
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                </ul>
-            </div>
+            
+
+
+
+
+
+
+            
             <footer style={{ background: '#87431D' }} className="text-white py-11 px-10">
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="w-full md:grid md:grid-cols-5 md:gap-x-5">
