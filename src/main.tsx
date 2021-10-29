@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import './assets/tailwind.pcss'
-import './assets/index.scss'
+import'./assets/index.scss'
 
 ReactDOM.render(
   <React.StrictMode>

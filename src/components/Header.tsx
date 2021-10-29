@@ -16,7 +16,7 @@ export default () => {
                 <div className="py-5" style={{ background: "#87431D" }}>
                     <div className="w-full max-w-6xl mx-auto flex flex-col justify-center items-center ">
                         <div className="text-lg flex">
-                            <NavLink to="/" className="px-4 hover:text-gray-300 transition duration-200" activeClassName={`text-gray-300`}>หน้าหลัก</NavLink>
+                            <NavLink exact to="/" className="px-4 hover:text-gray-300 transition duration-200" activeClassName={`text-gray-300`}>หน้าหลัก</NavLink>
                             <NavLink to="/products" className="px-4 hover:text-gray-300 transition duration-200" activeClassName={`text-gray-300`}>สินค้า</NavLink>
                             <NavLink to="/news" className="px-4 hover:text-gray-300 transition duration-200" activeClassName={`text-gray-300`}>ข่าวสาร</NavLink>
                             <NavLink to="/contact" className="px-4 hover:text-gray-300 transition duration-200" activeClassName={`text-gray-300`}>ติดต่อเรา</NavLink>

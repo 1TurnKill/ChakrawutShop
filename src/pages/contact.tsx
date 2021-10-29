@@ -14,7 +14,7 @@ export default () => {
             <div className="w-full flex justify-center items-center mt-12">
                 <div className="lg:flex">
                     <div className="w-full flex justify-center">
-                        <iframe className="max-w-lg w-full" style={{maxHeight:"512px"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.2870828717816!2d100.72378755872191!3d13.804525100000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d646f13edd06b%3A0xeca9e0d8b0169e8!2z4Lij4LmJ4Liy4LiZIOC4qi7guIjguLHguIHguKPguLLguKfguLjguJg!5e0!3m2!1sen!2sth!4v1634921051247!5m2!1sen!2sth" loading="lazy" frameBorder="0" ></iframe>
+                        <iframe className="max-w-lg w-full" style={{ maxHeight: "512px" }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.2870828717816!2d100.72378755872191!3d13.804525100000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d646f13edd06b%3A0xeca9e0d8b0169e8!2z4Lij4LmJ4Liy4LiZIOC4qi7guIjguLHguIHguKPguLLguKfguLjguJg!5e0!3m2!1sen!2sth!4v1634921051247!5m2!1sen!2sth" loading="lazy" frameBorder="0" ></iframe>
                     </div>
                     <div className="my-10 ml-14 text-gray-600">
                         <div>
@@ -44,7 +44,6 @@ export default () => {
                                 </a>
                             </div>
                         </div>
-
                         <div className="mt-5">
                             <div className="text-2xl text-gray-800">Facebook</div>
                             Page : ส.จักราวุธ จักรเย็บผ้า อะไหล่จักร<br />
@@ -55,7 +54,6 @@ export default () => {
                                 </div>
                             </a>
                         </div>
-
                         <div className="mt-5">
                             <div className="text-2xl text-gray-800">Shopee</div>
                             Shop : ChakrawutShop<br />
