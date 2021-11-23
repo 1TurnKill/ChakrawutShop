@@ -1,79 +1,59 @@
 import React, { ReactChild, useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
-import { useKeenSlider } from "keen-slider/react"
 import { FaFacebookF } from 'react-icons/fa'
-import "keen-slider/keen-slider.min.css"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import xml from '../assets/catalog.xml'
+import xml2 from '../assets/product.xml'
+import Catalog from '../components/Catalog'
+import CardContainer from '../components/CardContainer'
+import ProductCard from '../components/ProductCard'
+import AutoplaySlider from 'react-awesome-slider';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styled/fold-out-animation.scss';
+import 'react-awesome-slider/dist/styles.css';
+import style from '../assets/slide.module.scss'
+
+const slider = (
+    <AutoplaySlider className="w-full" style={{maxHeight:"567px",height:"500px"}} cssModule={style} bullets={false}>
+        <div data-src="/shop_hero2.png" />
+        <div data-src="/shop_hero2.png" />
+        <div data-src="/shop_hero2.png" />
+        <div data-src="/shop_hero2.png" />
+        <div data-src="/shop_hero2.png" />
+    </AutoplaySlider>
+)
 
 export default () => {
     const ref_grid = useRef(document.createElement("div"))
     const [grid, setGrid] = useState(0)
-    const [currentSlide, setCurrentSlide] = React.useState(0)
-    const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-        initial: 0,
-        slideChanged(s) {
-            setCurrentSlide(s.details().relativeSlide)
-        }, loop: true
-    })
-    useEffect(() => {
-        function resize() {
-            const w = ref_grid.current.getBoundingClientRect().width
-            const z = Math.round(((12 / 2304) * (w - ((w > 768) ? 276 : 0))))
-            setGrid((z < 2) ? 2 : z)
-        }
-        resize()
-        window.onresize = resize
-    }, [])
     return (
         <>
             <Header />
-            {/* <div className="w-full">
-                <div className="block relative">
-                    <div ref={sliderRef} data-slide={currentSlide} className="keen-slider w-full h-96">
-                        <div className="keen-slider__slide">
-                            <img src="/shop_hero1.png" alt="" />
-                        </div>
-                        <div className="keen-slider__slide">
-                            <img src="/shop_hero2.png" alt="" />
-                        </div>
-                        <div className="keen-slider__slide">
-                            <img src="/shop_hero3.png" alt="" />
-                        </div>
-                        <div className="keen-slider__slide">
-                            <img src="/shop_hero4.png" alt="" />
-                        </div>
-                    </div>
-                    <ArrowLeft onClick={(e: any) => e.stopPropagation() || slider.prev()} />
-                    <ArrowRight onClick={(e: any) => e.stopPropagation() || slider.next()} />
+            <div className="relative">
+                {slider}
+            </div>
+            <div>
+                <div className="text-center text-3xl text-gray-700 mt-9">ประเภทสินค้า</div>
+                <CardContainer>
+                    {xml["catalog"]["card"].map((element: any, i: number) => {
+                        return (
+                            <Catalog key={i + element} card={element} />
+                        )
+                    })}
+                </CardContainer>
+            </div>
+            <div>
+                <div className="text-center text-3xl text-gray-700 mt-9">สินค้าแนะนำ</div>
+                <div className="px-1">
+                    <CardContainer size={6}>
+                        {xml2["products"]["item"].map((element: any, i: number) => {
+                            return (
+                                <ProductCard key={i + element} card={element} />
+                            )
+                        })}
+                    </CardContainer>
                 </div>
-            </div> */}
-            <div className="text-center"></div>
-            <div ref={ref_grid} className="container max-w-7xl mx-auto">
-                <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="grid gap-6 pb-24">
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                </ul>
             </div>
             <Footer />
         </>

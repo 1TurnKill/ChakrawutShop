@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path="/"><Home /></Route>
-        <Route exact path="/contact"><Contact /></Route>
-        <Route exact path="/news"><News /></Route>
-        <Route exact path="/products"><Products /></Route>
+        <Switch>
+          <Route exact path="/"><Home /></Route>
+          <Route exact path="/contact"><Contact /></Route>
+          <Route exact path="/news"><News /></Route>
+          <Route exact path="/products"><Products /></Route>
+        </Switch>
       </Router>
     </div>
   )

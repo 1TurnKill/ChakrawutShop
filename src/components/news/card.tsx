@@ -1,16 +1,16 @@
 type card = {
     "image": {
         "_text": string
-    },
+    }
     "title": {
         "_text": string
-    },
+    }
     "date": {
         "_text": string
-    },
+    }
     "description": {
         "_text": string
-    },
+    }
     "readme": {
         "_text": string
     }
