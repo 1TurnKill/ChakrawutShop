@@ -7,7 +7,6 @@ export default function xmlLikeAPro(): Plugin {
         transform(code, id) {
             if (/\.xml$/.test(id)) {
                 const content = xml.xml2json(code,{compact:true,spaces:4})
-                console.log(content)
                 return { code: `export default ${content}`, map: { mappings: "" } }
             }
         },
