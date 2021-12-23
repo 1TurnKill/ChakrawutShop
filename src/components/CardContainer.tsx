@@ -14,7 +14,7 @@ export default (props: { children: ReactChild, size?: number }) => {
     }, [])
     return (
         <div ref={ref_grid} className="container max-w-7xl mx-auto my-10">
-            <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="grid gap-1 sm:gap-4 pb-24 sm:mx-14">
+            <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="mx-5 grid gap-3 sm:gap-4 pb-24 sm:mx-10">
                 {props.children}
             </ul>
         </div>

@@ -1,5 +1,4 @@
 import React, { ReactChild, useState, useRef, useEffect } from 'react'
-import { useKeenSlider } from "keen-slider/react"
 import { FaFacebookF } from 'react-icons/fa'
 
 export default () => {

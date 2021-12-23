@@ -2,13 +2,10 @@ import React, { ReactChild, useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 import { FaFacebookF } from 'react-icons/fa'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 export default () => {
     return (
         <>
-            <Header />
             <div className="w-full flex justify-center items-center mt-12">
                 <div className="lg:flex">
                     <div className="w-full flex justify-center">
@@ -73,7 +70,6 @@ export default () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

@@ -1,53 +1,75 @@
 import React, { ReactChild, useState, useRef, useEffect } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 import { FaFacebookF } from 'react-icons/fa'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import CardContainer from '../components/CardContainer';
+import ProductCard from '../components/ProductCard';
+import xml from '../assets/catalog.xml'
+import xml2 from '../assets/product.xml'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Category from '../components/Category';
 
 export default () => {
-    const ref_grid = useRef(document.createElement("div"))
-    const [grid, setGrid] = useState(0)
-    const [currentSlide, setCurrentSlide] = React.useState(0)
-    useEffect(() => {
-        function resize() {
-            const w = ref_grid.current.getBoundingClientRect().width
-            const z = Math.round(((12 / 2304) * (w - ((w > 768) ? 276 : 0))))
-            setGrid((z < 2) ? 2 : z)
-        }
-        resize()
-        window.onresize = resize
-    }, [])
     return (
         <>
-            <Header />
             <div className="text-center"></div>
-            <div ref={ref_grid} className="container max-w-7xl mx-auto">
-                <ul style={{ gridTemplateColumns: `repeat(${grid},minmax(0,1fr))` }} className="grid gap-6 pb-24">
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
+            <div className="container max-w-7xl mx-auto">
+                <div className='flex h-full'>
+                    <div className='w-72 h-full'>
+                        <Category></Category>
                     </div>
                     <div>
-                        <a href=""><li><div className="title">1</div></li></a>
+                        {
+                            [...xml["catalog"]["card"].map((card: any) => {
+                                return (
+                                    <Route exact path={`/products/${card.category._text}`}>
+                                        {(() => {
+                                            const fils = xml2["products"]["item"].filter((a: any) => a.category._text == card.category._text)
+                                            if (fils.length > 0)
+                                                return fils.map((element: any, i: number) => {
+                                                    return (
+                                                        <div key={i} className='flex p-5 mt-5'>
+                                                            <div className='overflow-hidden w-44 h-44 flex items-center relative py-2 mr-2'>
+                                                                <img src={`${element.image._text}`} alt="" />
+                                                            </div>
+                                                            <div>
+                                                                <div className=' text-blue-500'>
+                                                                    <Link to={`${element.link._text}`}>{element.title._text}</Link>
+                                                                </div>
+                                                                <div className='text-sm'>
+                                                                    <div className="text-red-500 my-1">ราคาเริ่มต้น {element.cost._text} บาท</div>
+                                                                    <div className="text-gray-600 my-2">ราคาเริ่มต้น {element.description._text} บาท</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            else {
+                                                return (
+                                                    <>
+                                                        <div>
+                                                            ไม่พบสินค้าในหมวดหมู่นี้
+                                                        </div>
+                                                    </>
+                                                )
+                                            }
+                                        })()}
+                                    </Route>
+                                )
+                            }),
+                            <Route exact path={`/products`}>
+                                <CardContainer size={5}>
+                                    {xml2["products"]["item"].map((element: any, i: number) => {
+                                        return (
+                                            <ProductCard key={i + element} card={element} reccommend={false} />
+                                        )
+                                    })}
+                                </CardContainer>
+                            </Route>]
+                        }
                     </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                    <div>
-                        <a href=""><li><div className="title">1</div></li></a>
-                    </div>
-                </ul>
+                </div>
             </div>
-            <Footer />
         </>
     )
 }

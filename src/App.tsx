@@ -4,17 +4,25 @@ import Home from './pages/index'
 import Contact from './pages/contact'
 import News from './pages/news'
 import Products from './pages/products'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route exact path="/"><Home /></Route>
-          <Route exact path="/contact"><Contact /></Route>
-          <Route exact path="/news"><News /></Route>
-          <Route exact path="/products"><Products /></Route>
-        </Switch>
+        <div className='min-h-screen'>
+          <Header />
+          <Switch>
+            <Route exact path="/"><Home /></Route>
+            <Route exact path="/contact"><Contact /></Route>
+            <Route exact path="/news"><News /></Route>
+            <Route path="/products/">
+              <Products />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
       </Router>
     </div>
   )

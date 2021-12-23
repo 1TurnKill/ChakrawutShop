@@ -4,72 +4,12 @@
         <title>โต๊ะจักร</title>
         <image>/news.png</image>
         <theme>dark</theme>
-        <link></link>
+        <category>tojak</category>
     </card>
     <card>
         <title>Test</title>
         <image>/news.png</image>
         <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>โต๊ะจักร</title>
-        <image>/news.png</image>
-        <theme>dark</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
-    </card>
-    <card>
-        <title>Test</title>
-        <image>/news.png</image>
-        <theme>white</theme>
-        <link></link>
+        <category>test</category>
     </card>
 </catalog>
