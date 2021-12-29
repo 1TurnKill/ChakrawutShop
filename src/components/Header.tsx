@@ -43,7 +43,7 @@ export default () => {
                             </div> */}
                         </div>
                     </div>
-                    <div className={`relative h-0 overflow-hidden transition-all duration-200 top-0 w-full ${open ? '' : 'h-auto'}`}>
+                    <div className={`relative overflow-hidden transition-all duration-200 top-0 w-full ${!open ? 'h-0' : 'h-auto'}`}>
                         <div className='w-full bg-white absolute'></div>
                         {/* <AiOutlineClose className='w-7 h-7 mx-5 absolute right-0 top-0 m-5' onClick={() => setOpen(false)} /> */}
                         <div className='relative'>

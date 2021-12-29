@@ -34,7 +34,7 @@ export default () => {
             <div className="text-center"></div>
             <div className="container max-w-7xl mx-auto">
                 <div className='flex flex-col-reverse h-full lg:flex-row'>
-                    <div className='w-full lg:w-80 px-5 h-full'>
+                    <div className='w-full lg:w-80 px-5 h-full sticky top-16'>
                         <div className='w-full mx-auto'>
                             <Category></Category>
                         </div>
@@ -80,8 +80,9 @@ export default () => {
                                                 </div>
                                                 <div className='text-sm'>
                                                     <div className="text-red-500">ราคาเริ่มต้น {element.cost._text} บาท</div>
-                                                    <div className="text-gray-600 "><span className='text-gray-700 font-semibold'>รายละเอียด :</span>
-                                                        <div className="text-gray-600 whitespace-pre-line">{element.description._text}</div>
+                                                    <div className="text-gray-600 ">
+                                                        <div className='text-gray-700 font-semibold'>รายละเอียด :</div>
+                                                        <div className="text-gray-600 whitespace-pre-line">{element.description._text.replace('\n','')}</div>
                                                     </div>
                                                     <div className="text-gray-600 "><span className='text-gray-700 font-semibold'>ยี่ห้อจักร :</span> <span>{element.serie._text}</span></div>
                                                     <div className="text-gray-600 "><span className='text-gray-700 font-semibold'>รหัสสินค้า :</span> <span>{element.model._text}</span></div>
@@ -91,7 +92,7 @@ export default () => {
                                                         <a href="https://shorturl.at/wxDIY" target="_blank" className="px-5 py-3.5 text-white text-xs rounded-sm hover:shadow-md flex w-56" style={{ backgroundColor: "#1877f2" }}>
                                                             <FaFacebookF className="w-4 h-4 my-auto mr-3" /><div>สอบถามรายละเอียดผ่าน FB inbox</div>
                                                         </a>
-                                                        <a href="https://line.me/ti/p/3gi4Cs1meK#~" target="_blank" className="px-5 py-3.5 text-white text-xs rounded-sm hover:shadow-md flex w-56 mx-2 my-2" style={{ backgroundColor: "#06c755" }}>
+                                                        <a href="https://line.me/ti/p/3gi4Cs1meK#~" target="_blank" className="px-5 py-3.5 text-white text-xs rounded-sm hover:shadow-md flex w-56 mx-2 my-2 xs:my-0" style={{ backgroundColor: "#06c755" }}>
                                                             <img className="w-6 mr-5" src="/line.svg" alt="" />
                                                             <div>
                                                                 สอบถามรายละเอียดผ่าน LINE chat
