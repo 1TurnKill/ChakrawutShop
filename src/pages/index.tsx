@@ -30,7 +30,7 @@ export default () => {
             </div>
             <div>
                 <div className="text-center text-3xl text-gray-700 mt-9">ประเภทสินค้า</div>
-                <CardContainer>
+                <CardContainer size={2} full={true}>
                     {xml["catalog"]["card"].map((element: any, i: number) => {
                         return (
                             <Catalog key={i + element} card={element} />

@@ -19,7 +19,7 @@ export default (props: { card: card,reccommend?:boolean }) => {
     const card = props.card
     return (
         <div className="w-full overflow-hidden flex flex-col bg-white rounded shadow-md hover:shadow-lg transition duration-200">
-            <a href={`/${card.link}`}>
+            <a href={`/products/item/${card.link._text}`}>
                 <div className="overflow-hidden w-full h-44 flex items-center relative py-2">
                     {props.reccommend?<div className="absolute top-0 left-0 mt-1 ml-1 px-4 py-1 select-none transform scale-75 text-white rounded-3xl" style={{ backgroundColor: '#d87c31' }}>แนะนำ</div>:''}
                     <img src={card.image._text} className="w-full" alt="" />

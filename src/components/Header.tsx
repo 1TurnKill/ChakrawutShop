@@ -1,8 +1,10 @@
 import React, { ReactChild, useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
-import { BiSearchAlt } from 'react-icons/bi'
+import { BiMenu } from 'react-icons/bi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 export default () => {
+    const [open, setOpen] = useState(false)
     return (
         <>
             <nav className="text-white relative">
@@ -15,8 +17,8 @@ export default () => {
                 </div>
             </nav>
             <div className="py-5 sticky top-0 left-0 z-50" style={{ background: "#87431D" }}>
-                <div className="w-full max-w-6xl mx-auto flex flex-col justify-center items-center ">
-                    <div className="text-lg flex">
+                <div className="w-full max-w-6xl mx-auto flex flex-col justify-center xs:items-center items-end">
+                    <div className="text-lg hidden xs:flex">
                         <div className="link-box">
                             <NavLink exact to="/" className="link" activeClassName={`text-gray-100`}>หน้าหลัก</NavLink>
                         </div>
@@ -40,6 +42,27 @@ export default () => {
                                 </div>
                             </div> */}
                         </div>
+                    </div>
+                    <div className={`relative h-0 overflow-hidden transition-all duration-200 top-0 w-full ${open ? '' : 'h-auto'}`}>
+                        <div className='w-full bg-white absolute'></div>
+                        {/* <AiOutlineClose className='w-7 h-7 mx-5 absolute right-0 top-0 m-5' onClick={() => setOpen(false)} /> */}
+                        <div className='relative'>
+                            <div className="link-box">
+                                <NavLink exact to="/" className="link" activeClassName={`text-gray-100`}>หน้าหลัก</NavLink>
+                            </div>
+                            <div className="link-box">
+                                <NavLink to="/products" className="link" activeClassName={`text-gray-100`}>สินค้า</NavLink>
+                            </div>
+                            <div className="link-box">
+                                <NavLink to="/news" className="link" activeClassName={`text-gray-100`}>ข่าวสาร</NavLink>
+                            </div>
+                            <div className="link-box">
+                                <NavLink to="/contact" className="link" activeClassName={`text-gray-100`}>ติดต่อเรา</NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='-my-2 block xs:hidden'>
+                        <BiMenu className='w-7 h-7 mx-5' onClick={() => setOpen(!open)} />
                     </div>
                 </div>
             </div>

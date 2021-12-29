@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog>
     <card>
-        <title>โต๊ะจักร</title>
-        <image>/news.png</image>
-        <theme>dark</theme>
-        <category>tojak</category>
+        <image>/รูปภาพสินค้า/จักรเย็บ/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>จักรเย็บ</category>
     </card>
     <card>
-        <title>Test</title>
-        <image>/news.png</image>
+        <image>/รูปภาพสินค้า/จักรโพ้ง/หน้าปก.png</image>
         <theme>white</theme>
-        <category>test</category>
+        <category>จักรโพ้ง</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/จักรลา/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>จักรลา</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/จักรเข็มคู่/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>จักรเข็มคู่</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/จักรเย็บมือสอง/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>จักรเย็บมือสอง</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/จักรกระเป๋าหิ้ว/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>จักรกระเป๋าหิ้ว</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/เครื่องตัดผ้า/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>เครื่องตัดผ้า</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/เตารีด/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>เตารีด</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/อะไหล่จักร/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>อะไหล่จักร</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/อุปกรณ์ตัดเย็บ/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>อุปกรณ์ตัดเย็บ</category>
+    </card>
+    <card>
+        <image>/รูปภาพสินค้า/ด้ายตัดเย็บ/หน้าปก.png</image>
+        <theme>white</theme>
+        <category>ด้ายตัดเย็บ</category>
     </card>
 </catalog>
