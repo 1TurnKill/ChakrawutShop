@@ -17,9 +17,7 @@ function App() {
             <Route exact path="/"><Home /></Route>
             <Route exact path="/contact"><Contact /></Route>
             <Route exact path="/news"><News /></Route>
-            <Route path="/products/">
-              <Products />
-            </Route>
+            <Route path="/products/"><Products /></Route>
           </Switch>
         </div>
         <Footer />
