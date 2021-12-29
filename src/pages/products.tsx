@@ -17,7 +17,7 @@ function render_item(element: any, i: any) {
             </div>
             <div>
                 <div className=' text-blue-500'>
-                    <Link to={`/products/item/${element.link._text}`}>{element.title._text}</Link>
+                    <Link to={`/products/item/${window.btoa(unescape(encodeURIComponent( element.link._text )))}`}>{element.title._text}</Link>
                 </div>
                 <div className='text-sm'>
                     <div className="text-red-500">ราคาเริ่มต้น {element.cost._text} บาท</div>
@@ -69,7 +69,7 @@ export default () => {
                                 })}
                             </Route>, ...xml2["products"]["item"].map((element: any, i: number) => {
                                 return (
-                                    <Route path={`/products/item/${element.link._text}`}>
+                                    <Route path={`/products/item/${window.btoa(unescape(encodeURIComponent( element.link._text )))}`}>
                                         <div className='flex flex-col lg:flex-row items-center lg:items-start p-5 mt-5'>
                                             <div className='overflow-hidden w-72 h-72 flex items-center relative py-2 mr-2 mb-5'>
                                                 <img className='w-full' src={`${element.image._text}`} alt="" />
