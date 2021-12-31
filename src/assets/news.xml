@@ -1,111 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <news>
+    <!-- beginning of document -->
+    <!-- line count : 128 -->
+
+    <card>
+        <image>/รูปข่าวสาร/31_12_2564/ปิดจ๊อบได้สวยงามสำหรับปีนี้.jpg</image>
+        <title>ปิดจ๊อบได้สวยงามสำหรับปีนี้</title>
+        <date>31 ธันวาคม 2564</date>
+        <description>
+            ส่งท้ายปีเก่าต้อนรับปีใหม่ด้วยจักรพิเศษ ส่งมอบ บริษัทโกลแฟ็บ จำกัด
+        </description>
+        <readme>https://shorturl.asia/jND2t</readme>
+    </card>
+
+    <card>
+        <image>/รูปข่าวสาร/31_12_2564/เก้าอี้นั่งเย็บผ้า สีฟ้าสดใสสวยงาม.jpg</image>
+        <title>เก้าอี้นั่งเย็บผ้า สีฟ้าสดใสสวยงาม</title>
+        <date>31 ธันวาคม 2564</date>
+        <description>
+            น้ำหนักเบาเคลื่อนย้ายสะดวก ทำจากพลาสติกเนื้อดี ขาเก้าอี้เป็นเหล็กอย่างดี 
+        </description>
+        <readme>https://shorturl.asia/w95fM</readme>
+    </card>
+
+    <card>
+        <image>/รูปข่าวสาร/31_12_2564/ไกล้จะมืดแล้วรีบๆส่งๆช้าหน่อย.jpg</image>
+        <title>ไกล้จะมืดแล้วรีบๆส่งๆช้าหน่อย</title>
+        <date>31 ธันวาคม 2564</date>
+        <description>
+            จัดส่งสิ่งดีๆไปให้ทันใช้งานแน่นอน จักรโพ้ง4เส้นJACK E3 ไปแพคคู่ พร้อมเก้าอี้ สีฟ้าสวยงาม แข็งแรงทนทาน
+        </description>
+        <readme>https://shorturl.asia/ghYx6</readme>
+    </card>
+
+    <card>
+        <image>/รูปข่าวสาร/31_12_2564/เวลานี้สินค้าปรับราคาขึ้นหลายรายการ.jpg</image>
+        <title>เวลานี้สินค้าปรับราคาขึ้นหลายรายการ</title>
+        <date>31 ธันวาคม 2564</date>
+        <description>
+            และคาดว่าหลังปีใหม่จะปรับขึ้นอีกครั้ง ลูกค้าหลายท่านเตรียมสั่งซื้อไว้ก่อน ก่อนที่ราคาจะขยับขึ้นไปมากกว่านี้
+        </description>
+        <readme></readme>
+    </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
+
     <card>
         <image>/news.png</image>
         <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
         <date>29 ตุลาคม 2021</date>
         <description>
             จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
+        </description>
+        <readme></readme>
     </card>
-    <card>
-        <image>/news.png</image>
-        <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
-        <date>29 ตุลาคม 2021</date>
-        <description>
-            จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
-    </card>
-    <card>
-        <image>/news.png</image>
-        <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
-        <date>29 ตุลาคม 2021</date>
-        <description>
-            จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
-    </card>
-    <card>
-        <image>/news.png</image>
-        <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
-        <date>29 ตุลาคม 2021</date>
-        <description>
-            จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
-    </card>
-    <card>
-        <image>/news.png</image>
-        <title>จักรโพ้งริมผ้ามือสองแบบตัวเล็ก</title>
-        <date>29 ตุลาคม 2021</date>
-        <description>
-            จักรโพ้งริมผ้ามือสองแบบตัวเล็ก ตะเข็บสวยปิ้งๆๆคุ้มมากๆ ราคาประหยัดครบชุดเพียง 2000 บาท
-       </description>
-       <readme></readme>
-    </card>
+
 </news>
+    <!-- end of document -->

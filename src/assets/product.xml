@@ -692,15 +692,15 @@
     <!-- จักรเข็มคู่ -->
 
     <item>
-        <image>/รูปภาพสินค้า/จักรเข็มคู่/ยี่ห้อ JACK/จักรเข็มคูลูกโซ่.jpg</image>
+        <image>/รูปภาพสินค้า/จักรเข็มคู่/ยี่ห้อ JACK/จักรเข็มคู่ลูกโซ่.jpg</image>
         <title>
-            จักรเข็มคู่ลูกโซ่ (JACK)
+            จักรเข็มคู่ลูกโซ่ ไดเร็ค (JACK)
         </title>
         <serie>
             JACK
         </serie>
         <model>
-            JK-8558W
+            JK-8558WDI
         </model>
         <description>
             - เกด1/4  เกด 3/16
@@ -709,7 +709,7 @@
         </description>
         <category>จักรเข็มคู่</category>
         <cost>10000</cost>
-        <link>จักรเข็มคู่ลูกโซ่ (JACK)</link>
+        <link>จักรเข็มคู่ลูกโซ่ ไดเร็ค (JACK))</link>
     </item>
 
     <item>
