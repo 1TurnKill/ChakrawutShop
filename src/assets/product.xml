@@ -991,7 +991,7 @@
     <item>
         <image>/รูปภาพสินค้า/จักรกระเป๋าหิ้ว/ยี่ห้อ butterfly/จักรบัตเตอร์ฟลายบอมเบอร์บี.jpg</image>
         <title>
-            จักรบัตเตอร์ฟลายบอมเบอร์บี (Janom)
+            จักรบัตเตอร์ฟลายบอมเบอร์บี (butterfly)
         </title>
         <serie>
             butterfly
@@ -1073,12 +1073,12 @@
     </item>
 
     <item>
-        <image>/รูปภาพสินค้า/จักรกระเป๋าหิ้ว/ยี่ห้อ Janom/จักรโพ้งกระเป๋าหิ้ว รุ่น Rainbow.jpg</image>
+        <image>/รูปภาพสินค้า/จักรกระเป๋าหิ้ว/ยี่ห้อ butterfly/จักรโพ้งกระเป๋าหิ้ว รุ่น Rainbow.jpg</image>
         <title>
-            จักรโพ้งกระเป๋าหิ้ว JN864 รุ่น Rainbow (Janom)
+            จักรโพ้งกระเป๋าหิ้ว JN864 รุ่น Rainbow (butterfly)
         </title>
         <serie>
-            Janom
+            butterfly
         </serie>
         <model>
             JN864
@@ -1096,7 +1096,5 @@
         <cost>10000</cost>
         <link>จักรโพ้งกระเป๋าหิ้ว JN864 รุ่น Rainbow (Janom)</link>
     </item>
-
-
 </products>
     <!-- end of document -->
